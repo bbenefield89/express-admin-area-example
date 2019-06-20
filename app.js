@@ -8,9 +8,9 @@ const Electronics = require('./database/models/Electronics')
 
 const app = express()
 const expressAdminArea = ExpressAdminArea.init(
-    express,
-    process.env.DB_URL,
-    { Electronics }
+  express,
+  process.env.DB_URL,
+  [{ model: Electronics }]
 )
 
 app.use(expressAdminArea)

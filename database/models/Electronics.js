@@ -7,6 +7,15 @@ const Electronics = db.define(
   {
     name: Sequelize.STRING,
     price: Sequelize.INTEGER
+  },
+  {
+    scopes: {
+      expressAdminArea: {
+        attributes: {
+          exclude: ['createdAt', 'updatedAt']
+        }
+      }
+    }
   }
 )
 
