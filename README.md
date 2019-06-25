@@ -10,6 +10,7 @@ There are a few steps before you can successfully run this project.
 
 - [Install PostgreSQL](https://www.postgresql.org/download/) or use a [Docker Container](https://hub.docker.com/_/postgres)
 - Clone this repo `git clone git@github.com:bbenefield89/express-admin-area-example.git`
+- Create a `.env` file and insert `DB_URL=postgresql://[username]:[password]@[host]/[database]`
 - Install dependencies `npm i`
 - Start server `npm run dev`
 - Open your favorite browser and navigate to [http://localhost:3000/expressadminarea](http://localhost:3000/expressadminarea)
